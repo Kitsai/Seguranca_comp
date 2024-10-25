@@ -93,5 +93,11 @@ int main() {
 /// mais frequentes da lingua portuguesa e esses testes são aplicados em todas
 /// as letras do texto em claro que possuem a maior frequencia.
 /// Ainda assim é possível que haja um caso onde não irá funcionar
-/// especialmente em textos pequenos uma vez que quanto maiot o texto
+/// especialmente em textos pequenos uma vez que quanto maior o texto
 /// mais ele irá se aproximar à distribuição esperada.
+/// Apesar de termos que calcular a frequencia usando essa abordagem
+/// temos que percorrer o texto no minimo 3 vezes o que será o mais provavel e
+/// no maximo 53 vezes. Mas dificilmente teremos tantos caracteres emptados pela
+/// maior frequencia dessa forma. logo é muito provavél que essa abordagem tenha
+/// que iterar pelo texto menos de 26 vezes sendo mais rápido do que a abordagem
+/// força bruta.

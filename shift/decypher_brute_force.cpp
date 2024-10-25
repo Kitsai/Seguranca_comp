@@ -35,5 +35,7 @@ int main() {
 /// ser bem relevante Esse tipo de ataque garante que você ira conseguir tanto o
 /// valor de shift quanto o texto em claro.
 /// Apesar de ser uma abordagem que não retorne uma resposta direta ele é
-/// simples de ser verificado e rapido de executar. Logo é uma abordagem muito
-/// boa para essa cifra.
+/// simples de ser verificado e rapido de executar para textos pequenos. A
+/// partir do momento que o texto se torna muito grande outras abordagens se
+/// tornam mais chamativas sendo mais eficientes e tendo uma acuracia
+/// semelhante. Logo é uma abordagem muito boa para essa cifra.
