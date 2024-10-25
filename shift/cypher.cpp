@@ -18,14 +18,14 @@ std::string CypherText(std::string plainText, int shift) {
   std::string cypherText = "";
 
   for (auto c : plainText) {
-    if (c != ' ')
+    if (isalpha(c))
       /// usando a funcao de mod criada os caracteres sao jogados para lowercase
       /// para simplificar entao e aplicada o shift e feito o modulo desse
       /// valor. feito isso e somado noavamente o valor para voltarem para a
       /// escala ascii
       cypherText += floorMod((std::tolower(c) - 'a' + shift), 26) + 'a';
     else
-      cypherText += ' ';
+      cypherText += c;
   }
 
   return cypherText;
