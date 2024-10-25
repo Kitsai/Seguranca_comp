@@ -54,6 +54,7 @@ std::string ColumnCypher(std::string plainText, unsigned charsPerRow) {
 int main() {
   unsigned charsPerRow;
   std::string plainText;
+
   std::cout << "How many characters per row? ";
   std::cin >> charsPerRow;
   std::cout << std::endl << "Enter the plain Text: ";
