@@ -32,8 +32,6 @@ std::string ApplyCypher(std::string text, const Dimensions &dimensions) {
     for (int j = 0; j < dimensions.rows; j++) {
       if (i + j * dimensions.columns < text.length())
         newText += text[i + j * dimensions.columns];
-      else
-        newText += (rand() % 26) + 'A';
     }
   }
 
